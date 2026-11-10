@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="基于声源表征增强的声事件定位与检测：八个视听实例及真实标注、AV-Conformer和所提方法的分行对比。">
+  <title>声事件定位与检测 · 视频实例</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>声事件定位与检测：视频实例</h1>
+      <p>基于声源表征增强的声事件定位与检测 · 补充材料</p>
+      <p>8个视听片段。每个实例包含带原始音频的视频，以及真实标注、AV-Conformer和所提方法的分行对比图。</p>
+      <nav aria-label="样本目录"><a href="#case-01">01 乐器演奏</a>
+        <a href="#case-02">02 语音类别区分</a>
+        <a href="#case-03">03 女性语音</a>
+        <a href="#case-04">04 音乐声源</a>
+        <a href="#case-05">05 语音与音乐：多声源场景</a>
+        <a href="#case-06">06 男女语音重叠</a>
+        <a href="#case-07">07 语音与日常生活声音重叠</a>
+        <a href="#case-08">08 男性语音与音乐重叠</a></nav>
+    </header>
+    <section class="example" id="case-01">
+      <h2>01　乐器演奏</h2>
+      <video controls playsinline preload="none" poster="assets/case-01-poster.webp"
+             aria-label="乐器演奏视频，含原始音频">
+        <source src="assets/case-01.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请<a href="assets/case-01.mp4">下载视频</a>。
+      </video>
+      <p class="row-guide"><strong>上行：真实标注</strong>　／　中行：AV-Conformer　／　下行：所提方法（TSAVF + CQD）</p>
+      <a class="comparison" href="plots/01_fold4_room15_mix010_deg208_start2234.svg" target="_blank" rel="noopener"
+         aria-label="打开乐器演奏完整对比图">
+        <img src="plots/01_fold4_room15_mix010_deg208_start2234.svg" loading="lazy" width="1500" height="800"
+             alt="乐器演奏。三行分别为真实标注、AV-Conformer和所提方法；四列分别为声事件活动、方位角、距离和画内画外，同列使用相同刻度。">
+      </a>
+      <p class="caption">点击图片查看大图；小屏幕可横向滑动图片。<a href="assets/case-01.mp4" download>下载视频</a></p>
+      <p class="sample">样本：fold4_room15_mix010_deg208_start2234</p>
+    </section>
+    <section class="example" id="case-02">
+      <h2>02　语音类别区分</h2>
+      <video controls playsinline preload="none" poster="assets/case-02-poster.webp"
+             aria-label="语音类别区分视频，含原始音频">
+        <source src="assets/case-02.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请<a href="assets/case-02.mp4">下载视频</a>。
+      </video>
+      <p class="row-guide"><strong>上行：真实标注</strong>　／　中行：AV-Conformer　／　下行：所提方法（TSAVF + CQD）</p>
+      <a class="comparison" href="plots/02_fold4_room8_mix001_deg112_start1883.svg" target="_blank" rel="noopener"
+         aria-label="打开语音类别区分完整对比图">
+        <img src="plots/02_fold4_room8_mix001_deg112_start1883.svg" loading="lazy" width="1500" height="800"
+             alt="语音类别区分。三行分别为真实标注、AV-Conformer和所提方法；四列分别为声事件活动、方位角、距离和画内画外，同列使用相同刻度。">
+      </a>
+      <p class="caption">点击图片查看大图；小屏幕可横向滑动图片。<a href="assets/case-02.mp4" download>下载视频</a></p>
+      <p class="sample">样本：fold4_room8_mix001_deg112_start1883</p>
+    </section>
+    <section class="example" id="case-03">
+      <h2>03　女性语音</h2>
+      <video controls playsinline preload="none" poster="assets/case-03-poster.webp"
+             aria-label="女性语音视频，含原始音频">
+        <source src="assets/case-03.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请<a href="assets/case-03.mp4">下载视频</a>。
+      </video>
+      <p class="row-guide"><strong>上行：真实标注</strong>　／　中行：AV-Conformer　／　下行：所提方法（TSAVF + CQD）</p>
+      <a class="comparison" href="plots/03_fold4_room24_mix006_deg015_start1049.svg" target="_blank" rel="noopener"
+         aria-label="打开女性语音完整对比图">
+        <img src="plots/03_fold4_room24_mix006_deg015_start1049.svg" loading="lazy" width="1500" height="800"
+             alt="女性语音。三行分别为真实标注、AV-Conformer和所提方法；四列分别为声事件活动、方位角、距离和画内画外，同列使用相同刻度。">
+      </a>
+      <p class="caption">点击图片查看大图；小屏幕可横向滑动图片。<a href="assets/case-03.mp4" download>下载视频</a></p>
+      <p class="sample">样本：fold4_room24_mix006_deg015_start1049</p>
+    </section>
+    <section class="example" id="case-04">
+      <h2>04　音乐声源</h2>
+      <video controls playsinline preload="none" poster="assets/case-04-poster.webp"
+             aria-label="音乐声源视频，含原始音频">
+        <source src="assets/case-04.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请<a href="assets/case-04.mp4">下载视频</a>。
+      </video>
+      <p class="row-guide"><strong>上行：真实标注</strong>　／　中行：AV-Conformer　／　下行：所提方法（TSAVF + CQD）</p>
+      <a class="comparison" href="plots/04_fold4_room10_mix001_deg333_start1111.svg" target="_blank" rel="noopener"
+         aria-label="打开音乐声源完整对比图">
+        <img src="plots/04_fold4_room10_mix001_deg333_start1111.svg" loading="lazy" width="1500" height="800"
+             alt="音乐声源。三行分别为真实标注、AV-Conformer和所提方法；四列分别为声事件活动、方位角、距离和画内画外，同列使用相同刻度。">
+      </a>
+      <p class="caption">点击图片查看大图；小屏幕可横向滑动图片。<a href="assets/case-04.mp4" download>下载视频</a></p>
+      <p class="sample">样本：fold4_room10_mix001_deg333_start1111</p>
+    </section>
+    <section class="example" id="case-05">
+      <h2>05　语音与音乐：多声源场景</h2>
+      <video controls playsinline preload="none" poster="assets/case-05-poster.webp"
+             aria-label="语音与音乐：多声源场景视频，含原始音频">
+        <source src="assets/case-05.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请<a href="assets/case-05.mp4">下载视频</a>。
+      </video>
+      <p class="row-guide"><strong>上行：真实标注</strong>　／　中行：AV-Conformer　／　下行：所提方法（TSAVF + CQD）</p>
+      <a class="comparison" href="plots/05_fold4_room15_mix009_deg175_start1837.svg" target="_blank" rel="noopener"
+         aria-label="打开语音与音乐：多声源场景完整对比图">
+        <img src="plots/05_fold4_room15_mix009_deg175_start1837.svg" loading="lazy" width="1500" height="800"
+             alt="语音与音乐：多声源场景。三行分别为真实标注、AV-Conformer和所提方法；四列分别为声事件活动、方位角、距离和画内画外，同列使用相同刻度。">
+      </a>
+      <p class="caption">点击图片查看大图；小屏幕可横向滑动图片。<a href="assets/case-05.mp4" download>下载视频</a></p>
+      <p class="sample">样本：fold4_room15_mix009_deg175_start1837</p>
+    </section>
+    <section class="example" id="case-06">
+      <h2>06　男女语音重叠</h2>
+      <video controls playsinline preload="none" poster="assets/case-06-poster.webp"
+             aria-label="男女语音重叠视频，含原始音频">
+        <source src="assets/case-06.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请<a href="assets/case-06.mp4">下载视频</a>。
+      </video>
+      <p class="row-guide"><strong>上行：真实标注</strong>　／　中行：AV-Conformer　／　下行：所提方法（TSAVF + CQD）</p>
+      <a class="comparison" href="plots/06_fold4_room8_mix005_deg293_start0449.svg" target="_blank" rel="noopener"
+         aria-label="打开男女语音重叠完整对比图">
+        <img src="plots/06_fold4_room8_mix005_deg293_start0449.svg" loading="lazy" width="1500" height="800"
+             alt="男女语音重叠。三行分别为真实标注、AV-Conformer和所提方法；四列分别为声事件活动、方位角、距离和画内画外，同列使用相同刻度。">
+      </a>
+      <p class="caption">点击图片查看大图；小屏幕可横向滑动图片。<a href="assets/case-06.mp4" download>下载视频</a></p>
+      <p class="sample">样本：fold4_room8_mix005_deg293_start0449</p>
+    </section>
+    <section class="example" id="case-07">
+      <h2>07　语音与日常生活声音重叠</h2>
+      <video controls playsinline preload="none" poster="assets/case-07-poster.webp"
+             aria-label="语音与日常生活声音重叠视频，含原始音频">
+        <source src="assets/case-07.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请<a href="assets/case-07.mp4">下载视频</a>。
+      </video>
+      <p class="row-guide"><strong>上行：真实标注</strong>　／　中行：AV-Conformer　／　下行：所提方法（TSAVF + CQD）</p>
+      <a class="comparison" href="plots/07_fold4_room24_mix004_deg094_start0285.svg" target="_blank" rel="noopener"
+         aria-label="打开语音与日常生活声音重叠完整对比图">
+        <img src="plots/07_fold4_room24_mix004_deg094_start0285.svg" loading="lazy" width="1500" height="800"
+             alt="语音与日常生活声音重叠。三行分别为真实标注、AV-Conformer和所提方法；四列分别为声事件活动、方位角、距离和画内画外，同列使用相同刻度。">
+      </a>
+      <p class="caption">点击图片查看大图；小屏幕可横向滑动图片。<a href="assets/case-07.mp4" download>下载视频</a></p>
+      <p class="sample">样本：fold4_room24_mix004_deg094_start0285</p>
+    </section>
+    <section class="example" id="case-08">
+      <h2>08　男性语音与音乐重叠</h2>
+      <video controls playsinline preload="none" poster="assets/case-08-poster.webp"
+             aria-label="男性语音与音乐重叠视频，含原始音频">
+        <source src="assets/case-08.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请<a href="assets/case-08.mp4">下载视频</a>。
+      </video>
+      <p class="row-guide"><strong>上行：真实标注</strong>　／　中行：AV-Conformer　／　下行：所提方法（TSAVF + CQD）</p>
+      <a class="comparison" href="plots/08_fold4_room8_mix004_deg076_start0795.svg" target="_blank" rel="noopener"
+         aria-label="打开男性语音与音乐重叠完整对比图">
+        <img src="plots/08_fold4_room8_mix004_deg076_start0795.svg" loading="lazy" width="1500" height="800"
+             alt="男性语音与音乐重叠。三行分别为真实标注、AV-Conformer和所提方法；四列分别为声事件活动、方位角、距离和画内画外，同列使用相同刻度。">
+      </a>
+      <p class="caption">点击图片查看大图；小屏幕可横向滑动图片。<a href="assets/case-08.mp4" download>下载视频</a></p>
+      <p class="sample">样本：fold4_room8_mix004_deg076_start0795</p>
+    </section>
+    <footer>
+      <p>数据：DCASE 2025 Task 3，dev-test。所提方法：TSAVF + CQD；强基线：AV-Conformer。</p>
+      <p>所选实例用于定性展示，整体性能与统计结论以完整测试集实验为准。</p>
+    </footer>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>

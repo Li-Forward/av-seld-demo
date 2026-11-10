@@ -1,0 +1,40 @@
+八个声事件定位与检测实例：GitHub Pages 发布说明
+
+本文件夹包含完整静态网页。双击 index.html 即可在浏览器预览。
+发布包不需要运行训练代码、Python 或任何后台服务。
+
+使用 GitHub 网页上传（不需要命令行）：
+1. 登录自己的 GitHub 账号，创建新仓库，例如 av-seld-demo。
+   Owner 选择你自己的账号，Visibility 选择 Public，勾选 Add README。
+2. 解压 av-seld-eight-examples.zip。
+3. 打开仓库 Code → Add file → Upload files。
+   将解压后的全部文件和 assets、plots 文件夹一起拖入并提交到 main 分支。
+   必须上传 ZIP 内的内容，而不是 ZIP 文件本身，也不要再套一层文件夹。
+   上传后 index.html、styles.css、app.js、assets/、plots/ 应直接位于仓库根目录。
+   .nojekyll 也是发布包的一部分；若文件管理器隐藏了它，可在 GitHub 中用
+   Add file → Create new file 创建名为 .nojekyll 的文件，内容留空或空一行后提交。
+4. 打开 Settings → Pages，在 Build and deployment 中设置：
+   Source: Deploy from a branch
+   Branch: main
+   Folder: /(root)
+   点击 Save。
+5. 等待部署完成，回到 Settings → Pages 点击 Visit site 获取正式网址。
+   网址通常为 https://你的用户名.github.io/av-seld-demo/。
+   这是给审稿人的网址，仓库的 github.com 地址不是演示网页地址。
+
+以后更新：把修改后的同名网页或素材上传到 main，Pages 会重新部署。
+如果页面缺图或缺视频，检查 assets/ 和 plots/ 是否一同上传，且目录层级未改变。
+
+文件与内容：
+- index.html：八个实例，原先的第12个实例在此编号08。
+- assets/：八个带原始音频的视频，以及对应的视频封面。
+- plots/：每个实例的三行对比图（真实标注 / AV-Conformer / TSAVF+CQD）。
+- .nojekyll：直接发布静态文件。
+
+所提方法：TSAVF+CQD；强基线：AV-Conformer。
+这些是人工挑选的定性实例；总体结论以完整测试集评估为准。
+
+GitHub 官方说明（2026-11-10核对）：
+https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
