@@ -8,6 +8,7 @@ h1 { font-size: 28px; margin: 0 0 10px; }
 header p { margin: 6px 0; color: #59616c; font-size: 14px; }
 nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px; font-size: 14px; }
 nav a { text-underline-offset: 4px; }
+.section-intro { color: #59616c; font-size: 14px; margin: 8px 0; }
 .example { margin-top: 36px; padding-top: 22px; border-top: 1px solid #dce0e5; }
 h2 { font-size: 20px; margin: 0 0 16px; font-weight: 600; }
 h3 { font-size: 16px; margin: 0 0 12px; font-weight: 600; }
@@ -22,6 +23,7 @@ a { color: #315b88; }
 a:focus-visible, video:focus-visible { outline: 3px solid #315b88; outline-offset: 4px; }
 .caption, .sample { color: #68717d; font-size: 12px; margin: 5px 0; }
 .sample { overflow-wrap: anywhere; }
+.observation { max-width: 960px; margin: 14px auto; font-size: 14px; }
 footer { margin-top: 38px; border-top: 1px solid #dce0e5; padding-top: 18px;
   font-size: 12px; color: #68717d; }
 footer p { margin: 4px 0; }

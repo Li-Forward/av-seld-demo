@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="基于声源表征增强的声事件定位与检测：TSAVF空间门控可视化。">
+  <title>TSAVF空间门控可视化</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>TSAVF空间门控可视化</h1>
+      <p>基于声源表征增强的声事件定位与检测 · 补充材料</p>
+      <p class="section-intro">3个代表性片段，用于观察模型对不同视觉区域的加权。每个案例包含带原始音频的视频和三个时刻的门控图。</p>
+      <p class="section-intro">颜色表示0～1的空间门控权重，数值越大表示区域特征保留程度越高。热图由7×7门控权重插值获得，所有案例使用统一色标。展示时刻依据真实画内声事件活动区间选取。</p>
+      <nav aria-label="TSAVF空间门控可视化目录"><a href="#tsavf-s01">S01 单人语音</a>
+        <a href="#tsavf-s03">S03 前后景人物</a>
+        <a href="#tsavf-s18">S18 站立人物</a></nav>
+    </header>
+    <section class="example" id="tsavf-s01">
+      <h2>S01　单人语音</h2>
+      <video controls playsinline preload="none" poster="assets/tsavf-s01-poster.webp"
+             aria-label="单人语音原始视频，含音频">
+        <source src="assets/tsavf-s01.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请<a href="assets/tsavf-s01.mp4">下载视频</a>。
+      </video>
+      <p class="row-guide"><strong>上行：原始画面</strong>　／　下行：TSAVF空间门控热图叠加</p>
+      <a class="comparison" href="plots/tsavf-s01.png" target="_blank" rel="noopener"
+         aria-label="打开单人语音空间门控可视化大图">
+        <img src="plots/tsavf-s01.png" loading="lazy" width="2170" height="853"
+             alt="单人语音在三个时刻的原始画面及门控热图，统一使用0到1色标。">
+      </a>
+      <p class="observation">在所示时刻，人物附近的门控权重相对较高，部分墙面和柜体权重较低。</p>
+      <p class="caption">点击图片查看大图；小屏幕可横向滑动图片。<a href="assets/tsavf-s01.mp4" download>下载视频</a></p>
+      <p class="sample">样本：fold4_room15_mix008_deg059_start0484</p>
+    </section>
+    <section class="example" id="tsavf-s03">
+      <h2>S03　前后景人物</h2>
+      <video controls playsinline preload="none" poster="assets/tsavf-s03-poster.webp"
+             aria-label="前后景人物原始视频，含音频">
+        <source src="assets/tsavf-s03.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请<a href="assets/tsavf-s03.mp4">下载视频</a>。
+      </video>
+      <p class="row-guide"><strong>上行：原始画面</strong>　／　下行：TSAVF空间门控热图叠加</p>
+      <a class="comparison" href="plots/tsavf-s03.png" target="_blank" rel="noopener"
+         aria-label="打开前后景人物空间门控可视化大图">
+        <img src="plots/tsavf-s03.png" loading="lazy" width="2170" height="853"
+             alt="前后景人物在三个时刻的原始画面及门控热图，统一使用0到1色标。">
+      </a>
+      <p class="observation">较高权重主要覆盖前景人物及其周围，背景人物附近的权重相对较低。</p>
+      <p class="caption">点击图片查看大图；小屏幕可横向滑动图片。<a href="assets/tsavf-s03.mp4" download>下载视频</a></p>
+      <p class="sample">样本：fold4_room15_mix006_deg351_start1942</p>
+    </section>
+    <section class="example" id="tsavf-s18">
+      <h2>S18　站立人物</h2>
+      <video controls playsinline preload="none" poster="assets/tsavf-s18-poster.webp"
+             aria-label="站立人物原始视频，含音频">
+        <source src="assets/tsavf-s18.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请<a href="assets/tsavf-s18.mp4">下载视频</a>。
+      </video>
+      <p class="row-guide"><strong>上行：原始画面</strong>　／　下行：TSAVF空间门控热图叠加</p>
+      <a class="comparison" href="plots/tsavf-s18.png" target="_blank" rel="noopener"
+         aria-label="打开站立人物空间门控可视化大图">
+        <img src="plots/tsavf-s18.png" loading="lazy" width="2170" height="853"
+             alt="站立人物在三个时刻的原始画面及门控热图，统一使用0到1色标。">
+      </a>
+      <p class="observation">较高权重覆盖站立人物与邻近操作台，远处沙发、门等区域权重相对较低。</p>
+      <p class="caption">点击图片查看大图；小屏幕可横向滑动图片。<a href="assets/tsavf-s18.mp4" download>下载视频</a></p>
+      <p class="sample">样本：fold4_room16_mix001_deg008_start1440</p>
+    </section>
+    <footer>
+      <p>数据：DCASE 2025 Task 3，dev-test。所提方法：TSAVF + CQD。</p>
+      <p>所选实例用于定性展示，整体性能与统计结论以完整测试集实验为准。</p>
+    </footer>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>

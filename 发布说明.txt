@@ -1,6 +1,7 @@
-八类场景、九个声事件定位与检测样本：GitHub Pages 发布说明
+定位与检测实例、TSAVF空间门控可视化：GitHub Pages 发布说明
 
-本文件夹包含完整静态网页。双击 index.html 即可在浏览器预览。
+本文件夹包含两个独立静态页面：index.html 为定位与检测实例，tsavf.html 为门控可视化。
+完整解压后，用浏览器分别打开这两个文件即可预览。
 发布包不需要运行训练代码、Python 或任何后台服务。
 
 使用 GitHub 网页上传（不需要命令行）：
@@ -10,7 +11,7 @@
 3. 打开仓库 Code → Add file → Upload files。
    将解压后的全部文件和 assets、plots 文件夹一起拖入并提交到 main 分支。
    必须上传 ZIP 内的内容，而不是 ZIP 文件本身，也不要再套一层文件夹。
-   上传后 index.html、styles.css、app.js、assets/、plots/ 应直接位于仓库根目录。
+   上传后 index.html、tsavf.html、styles.css、app.js、assets/、plots/ 应直接位于仓库根目录。
    .nojekyll 也是发布包的一部分；若文件管理器隐藏了它，可在 GitHub 中用
    Add file → Create new file 创建名为 .nojekyll 的文件，内容留空或空一行后提交。
 4. 打开 Settings → Pages，在 Build and deployment 中设置：
@@ -22,20 +23,29 @@
    网址通常为 https://你的用户名.github.io/av-seld-demo/。
    这是给审稿人的网址，仓库的 github.com 地址不是演示网页地址。
 
+两个页面的链接：
+- 定位与检测实例：原网站地址保持不变，例如 https://你的用户名.github.io/av-seld-demo/。
+- TSAVF空间门控可视化：在原网站地址末尾追加 tsavf.html，
+  例如 https://你的用户名.github.io/av-seld-demo/tsavf.html。
+不需要新建仓库，也不需要再次修改 Pages 设置。
+
 以后更新：把修改后的同名网页或素材上传到 main，Pages 会重新部署。
 如果页面缺图或缺视频，检查 assets/ 和 plots/ 是否一同上传，且目录层级未改变。
 
 本次更新（2026-11-11）：
+网页拆分为两个独立页面：定位与检测实例（8类场景、9个样本）和TSAVF空间门控可视化（3个样本）。
+TSAVF页面采用S01、S03、S18，提供带原始音频的视频、三个时刻的原图与门控叠加图。
+已有网站可上传 av-seld-update-two-pages.zip 解压后的内容，保持文件夹层级并提交到 main。
+该更新包也包含以下此前的样本调整，适用于原8样本版、9样本版及此前合并展示的网页。
 第02类“语音类别区分”保留原样本 fold4_room8_mix001_deg112_start1883，
 并增加 fold4_room8_mix001_deg049_start0277，两个样本各自展示视频与对比图。
 第03类改为 fold4_room15_mix003_deg026_start1652，水龙头声定位。
-网页共8类场景、9个样本。已有网站可只上传 av-seld-update-02-03.zip 解压后的内容，
-保持 assets/ 和 plots/ 目录层级并提交到 main，完成第02、03类场景的更新。
 
 文件与内容：
-- index.html：八类场景、九个样本，原先的第12个实例在此编号08。
-- assets/：九个带原始音频的视频，以及对应的视频封面。
-- plots/：每个实例的三行对比图（真实标注 / AV-Conformer / TSAVF+CQD）。
+- index.html：定位与检测实例，原网站链接对应此页。
+- tsavf.html：TSAVF空间门控可视化，使用独立链接引用。
+- assets/：12个带原始音频的视频，以及对应的视频封面。
+- plots/：定位与检测的三行对比图，以及3张TSAVF空间门控图。
 - .nojekyll：直接发布静态文件。
 
 所提方法：TSAVF+CQD；强基线：AV-Conformer。
